@@ -1,0 +1,55 @@
+.ds-home h1 { font-size: 1.75rem; margin: 0 0 4px; color: #1e2d4f; }
+.ds-home p { color: #666; margin: 0; }
+.ds-home-header { margin-bottom: 32px; }
+
+.ds-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.ds-stat-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  transition: box-shadow 0.2s;
+}
+.ds-stat-card:hover { box-shadow: 0 4px 12px rgba(30,45,79,0.08); }
+.ds-stat-icon { font-size: 1.8rem; }
+.ds-stat-info { display: flex; flex-direction: column; }
+.ds-stat-label { font-size: 0.78rem; color: #64748b; font-weight: 500; }
+.ds-stat-value { font-size: 1.6rem; font-weight: 700; color: #1e2d4f; }
+.ds-stat-trend { font-size: 0.75rem; color: #3b82f6; margin-top: 2px; }
+
+.ds-home-grid { display: grid; grid-template-columns: 1.8fr 1fr; gap: 24px; }
+@media (max-width: 1000px) { .ds-home-grid { grid-template-columns: 1fr; } }
+
+.ds-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+}
+.ds-card h3 { margin: 0 0 16px; font-size: 1rem; color: #1e2d4f; }
+
+.ds-table { width: 100%; border-collapse: collapse; }
+.ds-table th { text-align: left; padding: 10px 12px; font-size: 0.8rem; color: #64748b; border-bottom: 1px solid #e2e8f0; }
+.ds-table td { padding: 10px 12px; font-size: 0.88rem; border-bottom: 1px solid #f1f5f9; }
+.ds-mono { font-family: monospace; font-size: 0.82rem; color: #64748b; }
+.ds-bold { font-weight: 600; }
+.ds-badge { color: #fff; padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+
+.ds-quick-actions { display: flex; flex-direction: column; gap: 10px; }
+.ds-action-card {
+  display: flex; align-items: center; gap: 14px;
+  padding: 14px; border: 1px solid #e2e8f0; border-radius: 10px;
+  text-decoration: none; color: inherit; transition: all 0.15s;
+}
+.ds-action-card:hover { background: #f0f4f8; border-color: #3b82f6; }
+.ds-action-icon { font-size: 1.5rem; }
+.ds-action-card strong { display: block; font-size: 0.9rem; color: #1e2d4f; }
+.ds-action-card p { margin: 2px 0 0; font-size: 0.78rem; color: #64748b; }

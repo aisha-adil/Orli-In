@@ -1,0 +1,11 @@
+{
+  "name": "orli-frontend",
+  "private": true,
+  "workspaces": [
+    "admin-console",
+    "customer-app",
+    "designer-dashboard",
+    "manufacturer-panel",
+    "shared-ui"
+  ]
+}

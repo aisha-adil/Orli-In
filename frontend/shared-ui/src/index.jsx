@@ -1,0 +1,20 @@
+import './components/Layout.css';
+import './components/Dashboard.css';
+import './components/ColorPicker.css';
+import './components/CustomCalendar.css';
+import './components/CustomSelect.css';
+import './components/Orders.css';
+import './components/Products.css';
+import './components/ProductsList.css';
+import './components/Analytics.css';
+
+export { default as Layout } from './components/Layout.jsx';
+export { default as Dashboard } from './components/Dashboard.jsx';
+export { default as CustomSelect } from './components/CustomSelect.jsx';
+export { default as ColorPicker } from './components/ColorPicker.jsx';
+export { default as CustomCalendar } from './components/CustomCalendar.jsx';
+export { default as Analytics } from './components/Analytics.jsx';
+export { default as Orders } from './components/Orders.jsx';
+export { default as Products } from './components/Products.jsx';
+export { default as ProductsList } from './components/ProductsList.jsx';
+export { default as Register } from './components/Register.jsx';

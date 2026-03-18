@@ -1,0 +1,67 @@
+.sf-container { max-width: 900px; }
+.sf-title { font-size: 1.75rem; margin: 0 0 4px; color: #1e2d4f; }
+.sf-subtitle { color: #64748b; margin: 0 0 28px; }
+.sf-toast { background: #1e2d4f; color: #fff; padding: 12px 20px; border-radius: 8px; margin-bottom: 20px; font-size: 0.9rem; }
+
+.sf-section { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; margin-bottom: 20px; }
+.sf-section h3 { margin: 0 0 16px; font-size: 1rem; color: #1e2d4f; }
+.sf-hint { color: #64748b; font-size: 0.85rem; margin: 0 0 12px; }
+
+.sf-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.sf-full { grid-column: 1 / -1; }
+.sf-field { display: flex; flex-direction: column; gap: 4px; }
+.sf-field label { font-size: 0.78rem; font-weight: 600; color: #64748b; text-transform: uppercase; }
+.sf-input { padding: 10px 14px; border: 1px solid #e2e8f0; border-radius: 8px; background: #f8fafc; font-size: 0.9rem; font-family: inherit; }
+.sf-input:focus { border-color: #3b82f6; background: #fff; outline: none; box-shadow: 0 0 0 3px rgba(59,130,246,0.1); }
+.sf-textarea { padding: 10px 14px; border: 1px solid #e2e8f0; border-radius: 8px; background: #f8fafc; font-size: 0.9rem; font-family: inherit; resize: vertical; }
+.sf-textarea:focus { border-color: #3b82f6; background: #fff; outline: none; box-shadow: 0 0 0 3px rgba(59,130,246,0.1); }
+.sf-select { width: 100%; padding: 10px 14px; border: 1px solid #e2e8f0; border-radius: 8px; background: #f8fafc; font-size: 0.9rem; }
+
+.sf-save-btn, .sf-add-btn { padding: 10px 24px; background: #3b82f6; color: #fff; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-family: inherit; transition: background 0.15s; }
+.sf-save-btn:hover, .sf-add-btn:hover { background: #2563eb; }
+
+.sf-upload-form { display: flex; flex-direction: column; gap: 14px; }
+
+.sf-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+.sf-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; position: relative; }
+.sf-pub-badge { position: absolute; top: 12px; right: 12px; background: #22c55e; color: #fff; padding: 3px 10px; border-radius: 16px; font-size: 0.72rem; font-weight: 700; }
+.sf-card-img { height: 180px; background: #f1f5f9; display: flex; align-items: center; justify-content: center; }
+.sf-card-img img { width: 100%; height: 100%; object-fit: cover; }
+.sf-card-img span { color: #94a3b8; }
+.sf-card-body { padding: 14px; }
+.sf-card-body h4 { margin: 0 0 12px; font-size: 0.95rem; color: #1e2d4f; }
+.sf-card-actions { display: flex; gap: 8px; }
+.sf-pub-btn { flex: 1; padding: 8px; border-radius: 6px; border: none; background: #3b82f6; color: #fff; font-weight: 600; font-size: 0.82rem; cursor: pointer; }
+.sf-pub-btn:hover { background: #2563eb; }
+.sf-unpub-btn { flex: 1; padding: 8px; border-radius: 6px; border: 1px solid #e2e8f0; background: #fff; color: #1e2d4f; font-weight: 600; font-size: 0.82rem; cursor: pointer; }
+.sf-del-btn { padding: 8px 16px; border-radius: 6px; border: 1px solid #e2e8f0; background: #fff; color: #ef4444; font-weight: 600; font-size: 0.82rem; cursor: pointer; }
+.sf-empty { color: #94a3b8; text-align: center; padding: 40px; font-size: 1rem; }
+
+/* Store preview */
+.sf-store-preview {
+  background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px;
+  padding: 24px; text-align: center;
+}
+.sf-store-preview-header { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 8px; }
+.sf-preview-logo { height: 40px; object-fit: contain; border-radius: 6px; }
+.sf-store-preview h2 { margin: 0; font-size: 1.3rem; color: #1e2d4f; }
+.sf-store-preview p { color: #64748b; margin: 0; font-size: 0.9rem; }
+
+/* Logo upload */
+.sf-logo-upload { display: flex; flex-direction: column; gap: 10px; }
+.sf-file-input {
+  padding: 10px; border: 2px dashed #cbd5e1; border-radius: 8px;
+  background: #f8fafc; cursor: pointer; font-size: 0.85rem;
+}
+.sf-file-input:hover { border-color: #3b82f6; }
+.sf-logo-preview {
+  position: relative; width: 100px; height: 100px; border: 1px solid #e2e8f0;
+  border-radius: 10px; overflow: hidden;
+}
+.sf-logo-preview img { width: 100%; height: 100%; object-fit: contain; background: #f8fafc; }
+.sf-logo-remove {
+  position: absolute; top: 4px; right: 4px; width: 22px; height: 22px;
+  border-radius: 50%; border: none; background: rgba(0,0,0,0.5); color: #fff;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem;
+}

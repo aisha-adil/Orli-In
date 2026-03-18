@@ -1,0 +1,57 @@
+.canvas-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  background-color: var(--bg-color, #f4f6f8);
+  border-radius: 8px;
+}
+
+.canvas-workspace {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  margin-top: 20px;
+}
+
+.canvas-sidebar {
+  width: 250px;
+  background: white;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.canvas-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.canvas-sidebar li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #f8f9fa;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.canvas-sidebar li:hover {
+  background: #e9ecef;
+}
+
+.canvas-main-area {
+  flex: 1;
+  background: white;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.canvas-watermark {
+  color: #bbb;
+  font-size: 1.5rem;
+  user-select: none;
+}

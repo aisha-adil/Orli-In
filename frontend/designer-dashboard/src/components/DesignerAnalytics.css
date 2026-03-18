@@ -1,0 +1,54 @@
+.da-container { max-width: 1000px; }
+.da-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 32px; flex-wrap: wrap; gap: 16px; }
+.da-title { font-size: 1.75rem; margin: 0 0 4px; color: #1e2d4f; }
+.da-subtitle { color: #64748b; margin: 0; }
+.da-period-tabs { display: flex; gap: 4px; }
+.da-period-btn {
+  padding: 6px 14px; border: 1px solid #e2e8f0; border-radius: 6px;
+  background: #fff; cursor: pointer; font-size: 0.82rem; font-family: inherit;
+}
+.da-period-btn.active { background: #3b82f6; color: #fff; border-color: #3b82f6; }
+
+.da-kpi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 14px; margin-bottom: 24px; }
+.da-kpi-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; display: flex; flex-direction: column; transition: box-shadow 0.2s; }
+.da-kpi-card:hover { box-shadow: 0 4px 12px rgba(30,45,79,0.08); }
+.da-kpi-label { font-size: 0.72rem; color: #64748b; font-weight: 600; text-transform: uppercase; margin-bottom: 4px; }
+.da-kpi-value { font-size: 1.5rem; font-weight: 700; color: #1e2d4f; }
+.da-kpi-change { font-size: 0.78rem; margin-top: 4px; }
+.da-kpi-change.positive { color: #22c55e; }
+.da-kpi-change.negative { color: #ef4444; }
+
+.da-grid-2 { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; margin-bottom: 24px; }
+@media (max-width: 800px) { .da-grid-2 { grid-template-columns: 1fr; } }
+
+.da-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+.da-card h3 { margin: 0 0 20px; font-size: 1rem; color: #1e2d4f; }
+
+/* CSS bar chart */
+.da-bar-chart { display: flex; align-items: flex-end; gap: 16px; height: 200px; padding-top: 16px; }
+.da-bar-col { display: flex; flex-direction: column; align-items: center; flex: 1; }
+.da-bar { background: linear-gradient(180deg, #3b82f6, #1e2d4f); border-radius: 6px 6px 0 0; width: 100%; min-width: 28px; position: relative; transition: height 0.3s, opacity 0.2s; }
+.da-bar:hover { opacity: 0.85; }
+.da-bar-val { position: absolute; top: -20px; left: 50%; transform: translateX(-50%); font-size: 0.72rem; color: #64748b; white-space: nowrap; }
+.da-bar-label { margin-top: 8px; font-size: 0.78rem; color: #64748b; }
+
+/* Milestones */
+.da-milestones { display: flex; flex-direction: column; gap: 8px; }
+.da-milestone {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 14px; border-radius: 8px; font-size: 0.88rem;
+}
+.da-milestone.achieved { background: #f0f9ff; }
+.da-milestone.locked { background: #f8fafc; color: #94a3b8; }
+.da-milestone-icon { font-size: 1.2rem; }
+.da-milestone-text { flex: 1; }
+.da-milestone-check { color: #22c55e; font-weight: 700; }
+.da-milestone-lock { font-size: 0.8rem; }
+
+/* Table */
+.da-table { width: 100%; border-collapse: collapse; }
+.da-table th { text-align: left; padding: 10px 12px; font-size: 0.78rem; color: #64748b; border-bottom: 1px solid #e2e8f0; font-weight: 600; }
+.da-table td { padding: 10px 12px; font-size: 0.88rem; border-bottom: 1px solid #f1f5f9; }
+.da-rank { font-weight: 700; color: #cbd5e1; font-size: 1.1rem; }
+.da-product-name { font-weight: 600; color: #1e2d4f; }
+.da-bold { font-weight: 600; }
